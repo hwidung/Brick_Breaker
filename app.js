@@ -1,4 +1,6 @@
 import { gameManager } from "./gameManager.js";
+import {Start} from "./start.js";
+
 class App {
     constructor() {
         // test call
@@ -71,4 +73,5 @@ class App {
 
 window.onload = () => {
     new App();
+    new Start();
 }
