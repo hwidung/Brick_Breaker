@@ -27,34 +27,64 @@
                 <button id="level_1" class="button-style">초급</button>
                 <button id="level_2" class="button-style">중급</button>
                 <button id="level_3" class="button-style">고급</button>
-                <button id="back">뒤로가기</button>
+                <img src="images/In-Game/menu/backtogame.png" id="back">
+
             </div>
         </div>
 
         <div id="set-screen" class="btns">
             <button id="set-button" class="button-style">Setting</button>
             <div class="set-container">
-
+                <img src="images/In-game/menu-ex.png" id="menu-ex">
 
                 <!-- 환경설정 -->
                 <div id="set_BGM">
-                    <p>BGM</p>
+                    <input type="radio" name="bgm" value="sounds/BGM/Main_Menu.mp3" id="bgm1" checked>
+                    <label for="bgm1">Main_Menu</label>
+                    <audio id="bgmAudio1" src="sounds/BGM/Main_Menu.mp3"></audio>
+
+                    <input type="radio" name="bgm" value="sounds/BGM/Day_Stage.mp3" id="bgm2">
+                    <label for="bgm2">Day_Stage</label>
+                    <audio id="bgmAudio2" src="sounds/BGM/Day_Stage.mp3"></audio>
                     <br>
-                    <input type="button" value="ON" id="bgmBtn" onclick="bgm_setting()" /><br/>
+                    <input type="radio" name="bgm" value="sounds/BGM/Night_Stage.mp3" id="bgm3">
+                    <label for="bgm3">Night_Stage</label>
+                    <audio id="bgmAudio3" src="sounds/BGM/Night_Stage.mp3"></audio>
+
+                    <!-- <input type="radio" name="bgm" value="sounds/BGM/stage_start.mp3" id="bgm4">
+                    <label for="bgm4">stage_start</label>
+                    <audio id="bgmAudio4" src="sounds/BGM/stage_start.mp3"></audio> -->
+
+                    <input type="radio" name="bgm" value="none" id="bgm-none">
+                    <label for="bgm-none">None</label>
                 </div>
+
+
 
                 <div id="set_ballColor">
                     <p>공 색깔</p>
-                    <canvas id="settingCanvas" width="60" height="60"></canvas>
+                    <canvas id="settingCanvas" width="50" height="50"></canvas>
                     <div id="ballColor">
                         <span id="R">RED</span><input type="range" id="Red" value="0" min="0" max="255"/>
+                        <br>
                         <span id="G">GREEN</span><input type="range" id="Green" value="0" min="0" max="255"/>
+                        <br>
                         <span id="B">BLUE</span><input type="range" id="Blue" value="0" min="0" max="255"/>
                     </div>
                 </div>
 
 
-                <div id="background"></div>
+                <!-- <div id="background">
+                    <input type="radio" name="bgd" value="bgd1" id="dayB" checked>
+                    <label for="bgm1">DAY</label>
+                    <img src="images/In-Game/background1.jpg" id="day">
+
+                    <input type="radio" name="bgm" value="bgd2" id="nightB">
+                    <label for="bgm2">NIGHT</label>
+                    <img src="images/In-Game/background2.jpg" id="night">
+                </div> -->
+
+                <img src="images/In-Game/menu/backtogame.png" id="back">
             </div>
         </div>
 
@@ -62,10 +92,10 @@
             <button id="help-button" class="button-style">Help</button>
             <div class="help-content">
                 <p>도움말 내용</p>
-                <button id="back">뒤로가기</button>
+                <img src="images/In-Game/menu/backtogame.png" id="back">
             </div>
         </div>
-        
+
 
     </div>
 
